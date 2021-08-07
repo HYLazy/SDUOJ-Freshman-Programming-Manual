@@ -327,19 +327,21 @@
 
   再点击右上角Login，使用统一认证登录
 
-  ![Snipaste_2021-08-07_11-02-57](SDUOJ%E6%96%B0%E7%94%9F%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.assets/Snipaste_2021-08-07_11-02-57.png)
+  <img src="SDUOJ%E6%96%B0%E7%94%9F%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.assets/Snipaste_2021-08-07_11-02-57.png" alt="Snipaste_2021-08-07_11-02-57" style="zoom:50%;" />
 
   统一认证登录成功后，系统会自动提醒你绑定账号，按照提示操作
 
-  ![Snipaste_2021-08-07_11-59-18](SDUOJ%E6%96%B0%E7%94%9F%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.assets/Snipaste_2021-08-07_11-59-18.png)
+  <img src="SDUOJ%E6%96%B0%E7%94%9F%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.assets/Snipaste_2021-08-07_11-59-18.png" alt="Snipaste_2021-08-07_11-59-18" style="zoom:50%;" />
 
 * 账号注册并绑定成功后，点击Problem或Contest，选择题目，开始做题
 
   ![Snipaste_2021-08-07_11-22-19](SDUOJ%E6%96%B0%E7%94%9F%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.assets/Snipaste_2021-08-07_11-22-19.png)
 
-* 阅读题目要求和输入输出示例，页面划到最下方为提交代码区域。
+* 阅读题目要求和输入输出示例。
 
   ![Snipaste_2021-08-07_11-21-32](SDUOJ%E6%96%B0%E7%94%9F%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.assets/Snipaste_2021-08-07_11-21-32.png)
+  
+  页面划到最下方为提交代码区域
 
 ![Snipaste_2021-08-07_11-22-30](SDUOJ%E6%96%B0%E7%94%9F%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.assets/Snipaste_2021-08-07_11-22-30.png)
 
