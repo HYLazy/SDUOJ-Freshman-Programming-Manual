@@ -158,5 +158,200 @@
 
 ## 4.SDUOJ简介
 
-* 网址：https://oj.qd.sdu.edu.cn/（校园网登录）
-* 
+* 网址：https://oj.qd.sdu.edu.cn
+
+### 4.1SDUOJ简介
+
+### 4.2 SDUOJ使用说明
+
+* 可以结合下面的操作示范阅读
+
+* 选手使用 OJ 评测一般经过以下步骤：
+  1. 阅读题目，理解题意；
+  2. 思考问题，编写程序；
+  3. 提交程序，动态评测；
+  4. 实时反馈，思考问题。若评测结果不为 `Accepted` 则回到 1. 或 2.
+
+* IO 评测的原理介绍：
+  * 评测系统会使用标准输入输出（standard input & output）来测试你的程序。
+  * 类比说明：当你在控制台运行你的程序时，你可以手动按动键盘来输入（input）一些字符到控制台（比如 C 语言中可使用 `scanf` 进行读入），你写的程序会读入这些字符，并进行运算，最后可以输出（output。比如 C 语言中使用 `printf` 进行打印）结果。
+  * 而在评测系统中同样如此，选手提交源代码，评测系统会使用事先准备好一些 `输入数据` 和相应的 `输出数据` 作为 `测试点`。将选手提交的源代码编译后，让选手程序读入 `输入数据`，通过将选手程序 `输出数据` 与事先准备好的 `输出数据` 比较，来判断选手程序是否正确。这种评测方式被称之为 `黑盒评测`。
+  * 对于一个测试点，往往还会设置时间限制和空间限制。
+  * 时间限制，指的是程序运行时间的限制。选手程序在一个测试点上的运行时间不能超过给定的时间限制
+  * 空间限制，指的是程序使用的内存量的限制。选手程序在运行时占用的最大空间不能超过给定的空间限制。
+  * 在程序正常运行结束后，选手程序的 `输出` 会和 `测试点输出` 进行比对。这种比对一般在过滤文末换行和行末空格后，使用全文比对（文本比对）的方式来判定匹配与否。
+    所以，请不要在程序中输出多余的类似 `请输入 a 和 b: ...` 、`答案为: ...` 等 这种友好提示！
+  * 对于某些特殊的有多组解的题目，会使用一个特定的程序（Special Judge）来进行比对。
+  * 这一过程结束后，评测系统会根据程序的运行状态，给出不同的 `评测结果 (Judge Result)`：
+
+|     Judge Result (Alias)     |                         说明                         |                一般情况                |
+| :--------------------------: | :--------------------------------------------------: | :------------------------------------: |
+|        Accepted（AC）        |                    选手程序被接受                    |                                        |
+|     Compile Error（CE）      |                 选手程序无法正常编译                 |                                        |
+|      Wrong Answer（WA）      | 选手程序正常结束，但是选手程序的输出与测试点输出不符 |                                        |
+|   Presentation Error（PE）   |         选手程序正常结束，但是格式不符合要求         |         一般是多输出空格和空行         |
+|     Runtime Error（RE）      |  选手程序非正常结束（选手程序结束时的返回值不为零）  | 一般是程序异常，如下标越界、除零异常等 |
+|  Time Limit Exceeded（TLE）  |        选手程序运行的时间超过了给定的时间限制        |                                        |
+| Memory Limit Exceeded（MLE） |      选手程序占用的最大空间超过了给定的空间限制      |                                        |
+| Output Limit Exceeded（OLE） |         选手程序输出的内容的量超过了最大限制         |                                        |
+
+> ## 示例
+>
+> * **Description 题目描述**
+>
+> 给定两个整数 x 和 y，打印它们的和
+>
+> * **Input 输入标准**
+>
+> 两个整数 x 和 y，满足 0 <= x, y <= 32767.
+>
+> * **Output 输出要求**
+>
+> 一个整数，代表 x 和 y 的和
+>
+> * **Sample 样例**
+>
+> > 样例数据，是指来用辅助描述题目的 `标准输入数据` 和 `标准输出答案`，旨在帮助读者更好地理解题意。
+> > 题目最终的自动化评测数据可能并不包含样例数据，这需要你编写的程序符合题意并且逻辑正确。
+>
+> * **Sample Input 样例输入**
+>
+> ```
+> 1381 529
+> ```
+>
+> * **Sample Output 样例输出**
+>
+> ```
+> 1910
+> ```
+>
+> * **Hint 提示**
+>
+> 以下给出一些常见编程语言的 `A+B Problem` 代码示例：
+>
+> - C:
+>
+> ```c
+> #include <stdio.h>
+> int main(void)
+> {
+>     int a, b;
+>     scanf("%d%d", &a, &b);
+>     printf("%d\n", a + b);
+>     return 0;
+> }
+> ```
+>
+> - C++:
+>
+> ```c++
+> #include <iostream>
+> using namespace std;
+> int main()
+> {
+>     int a, b;
+>     cin >> a >> b;
+>     cout << a + b << endl;
+>     return 0;
+> }
+> ```
+>
+> - Python2:
+>
+> ```python
+> a, b = [int(i) for i in raw_input().split()]
+> print(a + b)
+> ```
+>
+> - Python3:
+>
+> ```python
+> a, b = [int(i) for i in input().split()]
+> print(a + b)
+> ```
+>
+> - Java:
+>
+> ```java
+> import java.io.*;
+> import java.util.Scanner;
+> public class Main {
+>     public static void main(String[] args) {
+>         Scanner sc = new Scanner(System.in);
+>         int a = sc.nextInt(), b = sc.nextInt();
+>         System.out.println(a + b);
+>     }
+> }
+> ```
+>
+> - Java With Buffer IO:
+>
+> ```java
+> import java.io.*;
+> import java.util.StringTokenizer;
+> public class Main
+> {
+>     public static void main(String[] args)
+>     {
+>         int a = nextInt(), b = nextInt();
+>         out.println(a + b);
+>         out.flush();
+>     }
+>     static BufferedReader in=new BufferedReader(new InputStreamReader(System.in));
+>     static StringTokenizer tok;
+>     static String next() {hasNext();return tok.nextToken();  }
+>     static String nextLine() {try{return in.readLine();}catch (Exception e) {return null;}}
+>     static long nextLong() {return Long.parseLong(next());}
+>     static int nextInt() {return Integer.parseInt(next());}
+>     static PrintWriter out=new PrintWriter(new OutputStreamWriter(System.out));
+>     static boolean hasNext()
+>     {
+>         while(tok==null||!tok.hasMoreTokens()) try{tok=new StringTokenizer(in.readLine());}catch(Exception e){return false;}
+>         return true;
+>     }
+> }
+> ```
+
+### SDUOJ操作示范
+
+* 打开网站：https://oj.qd.sdu.edu.cn
+
+  点击右上角Register注册账号
+
+  ![Snipaste_2021-08-07_12-01-04](SDUOJ%E6%96%B0%E7%94%9F%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.assets/Snipaste_2021-08-07_12-01-04.png)
+
+  注册成功并登录后，再进行学号绑定，需要先登出账号
+
+  ![Snipaste_2021-08-07_11-58-38](SDUOJ%E6%96%B0%E7%94%9F%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.assets/Snipaste_2021-08-07_11-58-38.png)
+
+  再点击右上角Login，使用统一认证登录
+
+  ![Snipaste_2021-08-07_11-02-57](SDUOJ%E6%96%B0%E7%94%9F%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.assets/Snipaste_2021-08-07_11-02-57.png)
+
+  统一认证登录成功后，系统会自动提醒你绑定账号，按照提示操作
+
+  ![Snipaste_2021-08-07_11-59-18](SDUOJ%E6%96%B0%E7%94%9F%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.assets/Snipaste_2021-08-07_11-59-18.png)
+
+* 账号注册并绑定成功后，点击Problem或Contest，选择题目，开始做题
+
+  ![Snipaste_2021-08-07_11-22-19](SDUOJ%E6%96%B0%E7%94%9F%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.assets/Snipaste_2021-08-07_11-22-19.png)
+
+* 阅读题目要求和输入输出示例，页面划到最下方为提交代码区域。
+
+  ![Snipaste_2021-08-07_11-21-32](SDUOJ%E6%96%B0%E7%94%9F%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.assets/Snipaste_2021-08-07_11-21-32.png)
+
+![Snipaste_2021-08-07_11-22-30](SDUOJ%E6%96%B0%E7%94%9F%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.assets/Snipaste_2021-08-07_11-22-30.png)
+
+计算导论课程一般选择C11进行提交。
+
+![Snipaste_2021-08-07_11-38-50](SDUOJ%E6%96%B0%E7%94%9F%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.assets/Snipaste_2021-08-07_11-38-50.png)
+
+* 在自己的IDE或文本编辑器中写好代码并测试，复制粘贴到提交代码区域进行提交。
+
+  ![Snipaste_2021-08-07_11-41-08](SDUOJ%E6%96%B0%E7%94%9F%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.assets/Snipaste_2021-08-07_11-41-08.png)
+
+* 提交完毕之后，SDUOJ会给出评测结果，如果正确无误，会全部显示Accept，如果不全为Accepted，则代表代码错误，需要重新修改测试再提交。
+
+  ![Snipaste_2021-08-07_11-24-53](SDUOJ%E6%96%B0%E7%94%9F%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.assets/Snipaste_2021-08-07_11-24-53.png)
+
