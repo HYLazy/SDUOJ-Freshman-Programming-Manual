@@ -1,6 +1,8 @@
 # SDUOJ新生编程入门手册
 
-2021年8月
+2021年8月 
+
+Github网址：[HYLazy/SDUOJ-Freshman-Programming-Manual](https://github.com/HYLazy/SDUOJ-Freshman-Programming-Manual)
 
 如有建议或意见，请发送邮件至：huangyl1024@outlook.com
 
@@ -51,7 +53,7 @@
 
 #### 2.1.1 Dev-C++ 安装使用
 
-* Dev-C++是学院老师推荐的一款IDE，优点在于小巧方便，不需要多余配置，缺点是这个IDE已经很久没有更新了，内置的编译器非常老旧，界面也很朴素，~~甚至可以直接使用动态数组~~。建议编程0基础或者感觉学习编程略有困难的同学使用。
+* Dev-C++是学院老师推荐的一款IDE，优点在于小巧方便，不需要多余配置，缺点是这个IDE已经很久没有更新了，内置的编译器非常老旧，界面也很朴素，~~甚至可以直接使用可变长数组~~。建议编程0基础或者感觉学习编程略有困难的同学使用。
 
 * 下载地址：[Dev-C++ 中文主页 (gitee.io)](https://devcpp.gitee.io/)
 
@@ -80,7 +82,7 @@
 
     ![20210806210647](SDUOJ%E6%96%B0%E7%94%9F%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.assets/20210806210647.png)
 
-  * 接下来是简单的编程体验时间
+  * 接下来是简单的编程体验时间，首先新建一个文件
 
     ![20210806211352](SDUOJ%E6%96%B0%E7%94%9F%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.assets/20210806211352.png)
 
@@ -109,11 +111,15 @@
 
 #### 2.1.2Visual Studio安装使用
 
-* 如果电脑存储空间足够（一般新电脑都没问题），并且具备一定通过搜索引擎解决问题的能力的话，我个人建议大一第一年还是使用Visual Studio(简称VS)。
+* 如果电脑存储空间足够（一般新电脑都没问题），并且具备一定通过搜索引擎解决问题的能力的话，我个人建议新生第一年还是使用Visual Studio(简称VS)。
 
-* 如果工作相关的话，Visual Studio是可以一直使用的IDE，优点在于功能非常全面，界面和功能也是可以高度自定义的，缺点在于比较臃肿，想要平时随便敲一点代码的话并不方便。
+  > Visual Studio是最流行的Windows平台应用程序的集成开发环境（IDE）之一，Microsoft Visual Studio（简称VS）是美国微软公司的开发工具包系列产品。
+  >
+  > VS是一个基本完整的开发工具集，它包括了整个软件生命周期中所需要的大部分工具，如UML工具、代码管控工具、集成开发环境(IDE)等等。所写的目标代码适用于微软支持的所有平台，包括Microsoft Windows、Windows Mobile、Windows CE、.NET Framework、.NET Compact Framework和Microsoft Silverlight .
 
-* 同时由于VS面向工程开发，出于安全性的考虑，在学习C语言时，使用输入输出函数可能会报错。可以自行百度，通过修改设置关闭奇怪的报错。
+* 如果工作相关的话，Visual Studio是可以一直使用的IDE，优点在于功能非常全面，界面和功能也可以高度自定义，缺点在于比较臃肿，想要平时随便敲一点代码的话并不灵活。
+
+* 同时由于VS面向工程开发，出于安全性的考虑，在学习C语言时，使用标准输入输出函数（`printf(),scanf()`）会报错。解决办法可以自行百度，通过修改设置关闭奇怪的报错，推荐方案：[vs2019 中c4996错误解决方案](https://blog.csdn.net/weixin_46165569/article/details/104327252)。
 
 * 官方下载地址：[Visual Studio 2019 IDE - 适用于 Windows 的编程软件 (microsoft.com)](https://visualstudio.microsoft.com/zh-hans/vs/)
 
@@ -127,7 +133,7 @@
 
     ![20210806204255](SDUOJ%E6%96%B0%E7%94%9F%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.assets/20210806204255.png)
 
-  * 只需要选择一个，其他功能有可能这辈子都用不到。可以更改存储位置，换一个空间比较大的硬盘分区。
+  * 只需要选择一个，其他功能有可能这辈子都用不到。推荐更改存储位置，选择的一个空间比较大的硬盘分区。
 
     ![20210806210357](SDUOJ%E6%96%B0%E7%94%9F%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.assets/20210806210357.png)
 
@@ -165,13 +171,15 @@
 
 * 简称为VSCode，微软开发的强大的文本编辑器，推荐有一定编程基础或者是实践能力比较强的新生使用。
 
-* 轻便快捷，功能强大，插件丰富，外观漂亮，支持各种主流操作系统。适合写前端和项目不大的后端代码时使用，可能唯一的缺点是环境配置和文件管理方式对新手不友好。
+* 轻便快捷，功能强大，插件丰富，外观漂亮，支持各种主流操作系统。适合写前端和项目不大的后端代码时使用，可能唯一的缺点是C/C++环境配置和文件管理方式对新手不太友好。
 
 * 官方下载地址：[Visual Studio Code - Code Editing. Redefined](https://code.visualstudio.com/)
 
   ![image-20210807143047270](SDUOJ%E6%96%B0%E7%94%9F%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.assets/image-20210807143047270.png)
 
 * 接下来是常规安装操作，这里不做介绍。
+
+* C/C++的环境配置推荐按照[VSCode配置C/C++环境](https://zhuanlan.zhihu.com/p/87864677)这篇教程进行操作。以下只介绍VSCode的简单使用和编译器安装。
 
 * 安装完之后打开，建议新手按照下图安装中文插件，有编程基础的新生可以挑战一下英语。
 
@@ -193,16 +201,17 @@
 
   环境配置比较重要，如果想要在软件开发方面走得更远的话一定要熟练掌握。在这里详细提一下。
 
-* 接下来的具体操作配置比较繁琐，推荐按照[VSCode配置C/C++环境 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/87864677)这篇教程进行操作。
+* 接下来的具体操作配置比较繁琐，请参考教程。
+
 * 需要注意的是VSCode一般以文件夹为工作单位，先在VSCode中打开一个文件夹才方便自由敲代码。
 
 #### 2.1.4 其他
 
-* 适合C/C++的文本编辑器和IDE还有很多，例如Clion、Codeblocks、Sublime、vim等，这里面除了Codeblocks比较适合新生入门，其他或多或少都需要进行配置，在这里就不详细介绍了。
+* 适合C/C++的文本编辑器和IDE还有很多，例如Clion、Codeblocks、Sublime、vim等，~~甚至不同编译器之间还有明显差别~~，这里面除了Codeblocks比较适合新生入门，其他或多或少都需要进行配置，在这里就不详细介绍了。
 
 ### 2.2 Python环境配置
 
-* Python是一门简单且使用的语言，上手快，功能丰富，并且处在人工智能和大数据的风口上，适合编写一些小项目。同时也建议无论什么专业，最好都学一下python，用很多可以帮助办公的功能，非常实用。
+* Python是一门简单且使用的语言，上手快，功能丰富，并且处在人工智能和大数据的风口上，适合编写一些小项目。同时也建议无论什么专业，最好都学一下python，它有很多可以帮助办公的功能，非常实用。
 
 * 官方下载地址：[Python Releases for Windows | Python.org](https://www.python.org/downloads/windows/)（可能连接不上）
 
@@ -256,11 +265,15 @@
 
   学生认证地址：[Free Educational Licenses - Community Support (jetbrains.com)](https://www.jetbrains.com/community/education/#students)
 
-* 接下来直接安装启动即可正常使用。
+* IDEA十分方便，接下来直接安装启动即可正常使用。
 
 ## 3.学习建议
 
-* 学好每一门课。
+* 以下内容仅为建议，请结合个人实际情况进行计算机科学与技术的学习。
+
+### 3.1 学习经验
+
+* 首先学好每一门课。~~一定一定不要挂科！！！~~
 
 * 如果感觉学习吃力，可以去mooc网：https://www.icourse163.org/和B站：[哔哩哔哩 (゜-゜)つロ 干杯~-bilibili](https://www.bilibili.com/)搜索学习视频。
 
@@ -291,6 +304,36 @@
 
   * [计科学习常见术语简介](https://github.com/HYLazy/introduction-to-commom-terms-in-CS)
 
+### 3.2 缺失的一课
+
+* 笔者在参加**SDUOJ培训**时，感觉到了自己所掌握知识的不足，再结合看到了[计算机教育中缺失的一课](https://missing-semester-cn.github.io/)这个github项目，逐渐认识到了高中学习与大学学习的脱节，以及学院课程与实际生产的不同步。在实际学习大学课程的过程中，有许多东西老师和课堂并不会教给我们，需要我们自己去摸索：有许多可以提升学习效率的工具，有许多对某课程学习有极大裨益的书籍、视频，有许多指导你未来方向的课程，有许多在计算机学习中需要养成的习惯。学长们的经验能起到的作用有限，大部分都需要自己去摸索，在我看来，这就是处在高中和大学之间缺失的一课。但是这本手册篇幅有限，仅仅在此提及一下个人推荐大一新生自主学习的内容。
+
+* 缺失的一课手册：[计算机教育中缺失的一课 ](https://missing-semester-cn.github.io/)
+
+  视频：[计算机教育中缺失的一课 [The Missing Semester of Your CS Education]_bilibili](https://www.bilibili.com/video/BV1rU4y1h7Qr?from=search&seid=3971122762091943952)
+
+* git与github：版本控制与团队协作
+
+  相关资料：
+
+  * [Git使用教程,最详细，最傻瓜，最浅显，真正手把手教](https://zhuanlan.zhihu.com/p/30044692)
+  * [Github简易使用指南 ](https://zhuanlan.zhihu.com/p/54127454)
+
+* 如何记笔记：
+
+  * [Typora使用教程 | typora中文网](https://www.typora.net/527.html)
+  * [思源笔记 - 本地优先的个人知识管理系统](https://b3log.org/siyuan/)
+
+* 使用虚拟机：
+
+  * [手把手教你安装Linux虚拟机 ](https://zhuanlan.zhihu.com/p/41940739)
+
+* 学会画图：
+
+  * [ProcessOn - 免费在线作图，思维导图，流程图，实时协作](https://www.processon.com/)
+
+* ~~科学上网~~
+
 ## 4.关于SDUOJ
 
 * 网址：https://oj.qd.sdu.edu.cn
@@ -314,7 +357,9 @@
 
 * 打开网站：https://oj.qd.sdu.edu.cn
 
-  点击右上角Register注册账号
+  需要使用校园网访问，新生分配到山大统一认证账号后可以使用山大VPN在校外访问。详见附录。
+
+* 点击右上角Register注册账号
 
   ![Snipaste_2021-08-07_12-01-04](SDUOJ%E6%96%B0%E7%94%9F%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.assets/Snipaste_2021-08-07_12-01-04.png)
 
@@ -326,7 +371,7 @@
 
   <img src="SDUOJ%E6%96%B0%E7%94%9F%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.assets/Snipaste_2021-08-07_11-02-57.png" alt="Snipaste_2021-08-07_11-02-57" style="zoom:50%;" />
 
-  统一认证登录成功后，系统会自动提醒你绑定账号，按照提示操作。
+  统一认证登录成功后，系统会自动提醒你绑定账号，按照提示操作。没有山大统一认证账号也可以跳过。
 
   <img src="SDUOJ%E6%96%B0%E7%94%9F%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.assets/Snipaste_2021-08-07_11-59-18.png" alt="Snipaste_2021-08-07_11-59-18" style="zoom:50%;" />
 
